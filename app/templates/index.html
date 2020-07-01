@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <input type="number" name="number1" placeholder="Number1"><br>
+        <input type="number" name="number2" placeholder="Number2"><br>
+        <input type="text" name="string" placeholder="String"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if last_row %}
+        <span>{{ last_row.id }}</span>
+        <span>{{ last_row.number1 / last_row.number2 }}</span>
+    {% endif %}
+</body>
+</html>
